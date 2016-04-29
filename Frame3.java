@@ -1,5 +1,4 @@
-package edu.cuny.csi.csc330.ProjectIceCream.Project;
-
+package edu.cuny.csi.csc330.Project;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -15,14 +14,13 @@ import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 
-public class Frame3 {
+public class frame3 {
 
-	public static JFrame frame;
+	public JFrame frame;
 	private JTextField txtYouHaveSelected;
-	public JTextField txtSize;
-	public JTextField txtFlavor;
+	private JTextField txtSmall;
+	private JTextField txtMango;
 	private JTextField txtPrice;
-	
 
 	/**
 	 * Launch the application.
@@ -31,7 +29,7 @@ public class Frame3 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Frame3 window = new Frame3();
+					frame3 window = new frame3();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,7 +41,7 @@ public class Frame3 {
 	/**
 	 * Create the application.
 	 */
-	public Frame3() {
+	public frame3() {
 		initialize();
 	}
 
@@ -60,16 +58,16 @@ public class Frame3 {
 		list_1.setBounds(263, 195, 1, 1);
 		frame.getContentPane().add(list_1);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setIcon(new ImageIcon("C:\\Users\\Tiffany Vacirca\\Desktop\\confirm order\\fl_icecream_greentea_hero.jpg"));
+		JButton btnNewButton = new JButton("");
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\Tiffany Vacirca\\Desktop\\confirm order\\fl_gelato_blackcherryamarettogelato_hero2.jpg"));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnNewButton.setBounds(224, 11, 210, 225);
+		btnNewButton.setBounds(222, 11, 225, 225);
 		frame.getContentPane().add(btnNewButton);
 		
-		JButton Continue = new JButton("Continue");
+		JButton Continue = new JButton("Continuey");
 		Continue.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -82,7 +80,6 @@ public class Frame3 {
 		btnChangeYourFlavor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Frame1 frameey = new Frame1();
-				//frame3 framey2 = new frame3();
 				openWindow(frameey);		
 			}
 		});
@@ -95,17 +92,17 @@ public class Frame3 {
 		frame.getContentPane().add(txtYouHaveSelected);
 		txtYouHaveSelected.setColumns(10);
 		
-		txtSize = new JTextField();
-		//txtSize.setText("null");
-		txtSize.setBounds(282, 265, 86, 20);
-		frame.getContentPane().add(txtSize);
-		txtSize.setColumns(10);
+		txtSmall = new JTextField();
+		txtSmall.setText("Small");
+		txtSmall.setBounds(282, 265, 86, 20);
+		frame.getContentPane().add(txtSmall);
+		txtSmall.setColumns(10);
 		
-		txtFlavor = new JTextField();
-		//txtFlavor.setText("Mango");
-		txtFlavor.setBounds(282, 287, 86, 20);
-		frame.getContentPane().add(txtFlavor);
-		txtFlavor.setColumns(10);
+		txtMango = new JTextField();
+		txtMango.setText("Mango");
+		txtMango.setBounds(282, 287, 86, 20);
+		frame.getContentPane().add(txtMango);
+		txtMango.setColumns(10);
 		
 		txtPrice = new JTextField();
 		txtPrice.setText("Price: $6.50");
@@ -117,7 +114,6 @@ public class Frame3 {
 	
 	public void openWindow(Frame1 frameOpen){
 		this.frame.setVisible(false);
-		frameOpen.frame.setVisible(true);
-		
+		frameOpen.frame1.setVisible(true);	
 	}
 }
