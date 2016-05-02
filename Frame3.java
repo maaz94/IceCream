@@ -1,4 +1,4 @@
-package edu.cuny.csi.csc330.Project;
+package edu.cuny.csi.csc330.ProjectIceCream.Project;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -14,12 +14,12 @@ import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 
-public class frame3 {
+public class Frame3 {
 
 	public JFrame frame;
 	private JTextField txtYouHaveSelected;
-	private JTextField txtSmall;
-	private JTextField txtMango;
+	public JTextField txtSize;
+	public JTextField txtFlavor;
 	private JTextField txtPrice;
 
 	/**
@@ -29,7 +29,7 @@ public class frame3 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frame3 window = new frame3();
+					Frame3 window = new Frame3();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,7 +41,7 @@ public class frame3 {
 	/**
 	 * Create the application.
 	 */
-	public frame3() {
+	public Frame3() {
 		initialize();
 	}
 
@@ -92,17 +92,17 @@ public class frame3 {
 		frame.getContentPane().add(txtYouHaveSelected);
 		txtYouHaveSelected.setColumns(10);
 		
-		txtSmall = new JTextField();
-		txtSmall.setText("Small");
-		txtSmall.setBounds(282, 265, 86, 20);
-		frame.getContentPane().add(txtSmall);
-		txtSmall.setColumns(10);
+		txtSize = new JTextField();
+		txtSize.setText("Small");
+		txtSize.setBounds(282, 265, 86, 20);
+		frame.getContentPane().add(txtSize);
+		txtSize.setColumns(10);
 		
-		txtMango = new JTextField();
-		txtMango.setText("Mango");
-		txtMango.setBounds(282, 287, 86, 20);
-		frame.getContentPane().add(txtMango);
-		txtMango.setColumns(10);
+		txtFlavor = new JTextField();
+		txtFlavor.setText("Mango");
+		txtFlavor.setBounds(282, 287, 86, 20);
+		frame.getContentPane().add(txtFlavor);
+		txtFlavor.setColumns(10);
 		
 		txtPrice = new JTextField();
 		txtPrice.setText("Price: $6.50");
@@ -114,6 +114,6 @@ public class frame3 {
 	
 	public void openWindow(Frame1 frameOpen){
 		this.frame.setVisible(false);
-		frameOpen.frame1.setVisible(true);	
+		frameOpen.frame.setVisible(true);	
 	}
 }

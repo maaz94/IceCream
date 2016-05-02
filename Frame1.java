@@ -99,7 +99,7 @@ public class Frame1 {
 		
 		JButton btnNewButton = new JButton("");
 		btnNewButton.setBackground(new Color(255, 105, 180));
-		btnNewButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\iceCreamSmall.jpg"));
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\iceCreamSmall.jpg"));
 		//btnNewButton.setIcon
 		btnNewButton.setBounds(175, 124, 86, 73);
 		frame.getContentPane().add(btnNewButton);
@@ -113,12 +113,12 @@ public class Frame1 {
 		txtIceCreamSize.setColumns(10);
 		
 		btnNewButton_1 = new JButton("");
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\iceCreamMed.jpg"));
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\iceCreamMed.jpg"));
 		btnNewButton_1.setBounds(295, 100, 133, 117);
 		frame.getContentPane().add(btnNewButton_1);
 		
 		btnNewButton_2 = new JButton("");
-		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\iceCreamLarge.jpg"));
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\iceCreamLarge.jpg"));
 		btnNewButton_2.setBounds(465, 83, 160, 152);
 		frame.getContentPane().add(btnNewButton_2);
 		
@@ -131,7 +131,7 @@ public class Frame1 {
 		chooseAFlavorTxt.setColumns(10);
 		
 		JButton chocolateButton = new JButton("");
-		chocolateButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\Chocolate.jpg"));
+		chocolateButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\Chocolate.jpg"));
 		chocolateButton.setBounds(175, 297, 122, 76);
 		frame.getContentPane().add(chocolateButton);
 		chocolateButton.addActionListener(new ActionListener(){
@@ -143,7 +143,7 @@ public class Frame1 {
 		});	
 		
 		JButton blackCherryButton = new JButton("");
-		blackCherryButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\BlackCherry.jpg"));
+		blackCherryButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\BlackCherry.jpg"));
 		blackCherryButton.setBounds(465, 297, 122, 76);
 		frame.getContentPane().add(blackCherryButton);
 		blackCherryButton.addActionListener(new ActionListener(){
@@ -155,7 +155,7 @@ public class Frame1 {
 		});
 		
 		JButton cookiesAndCreamButton = new JButton("");
-		cookiesAndCreamButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\Cookies&Cream.jpg"));
+		cookiesAndCreamButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\Cookies&Cream.jpg"));
 		cookiesAndCreamButton.setBounds(319, 384, 122, 76);
 		frame.getContentPane().add(cookiesAndCreamButton);
 		cookiesAndCreamButton.addActionListener(new ActionListener(){
@@ -167,7 +167,7 @@ public class Frame1 {
 		});
 		
 		JButton vanillaButton = new JButton("");
-		vanillaButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\Vanilla.jpg"));
+		vanillaButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\Vanilla.jpg"));
 		vanillaButton.setBounds(37, 297, 122, 76);
 		frame.getContentPane().add(vanillaButton);
 		vanillaButton.addActionListener(new ActionListener(){
@@ -179,7 +179,7 @@ public class Frame1 {
 		});
 		
 		JButton tiramisuGelatoButton = new JButton("");
-		tiramisuGelatoButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\TirmisuGelato.jpg"));
+		tiramisuGelatoButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\TirmisuGelato.jpg"));
 		tiramisuGelatoButton.setBounds(319, 297, 122, 76);
 		frame.getContentPane().add(tiramisuGelatoButton);
 		tiramisuGelatoButton.addActionListener(new ActionListener(){
@@ -191,7 +191,7 @@ public class Frame1 {
 		});
 		
 		JButton chocolatePeanutButterButton = new JButton("");
-		chocolatePeanutButterButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\ChocolatePeanutButter.jpg"));
+		chocolatePeanutButterButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\ChocolatePeanutButter.jpg"));
 		chocolatePeanutButterButton.setBounds(175, 384, 122, 76);
 		frame.getContentPane().add(chocolatePeanutButterButton);
 		chocolatePeanutButterButton.addActionListener(new ActionListener(){
@@ -203,7 +203,7 @@ public class Frame1 {
 		});
 		
 		JButton butterPecanButton = new JButton("");
-		butterPecanButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\ButterPecan.jpg"));
+		butterPecanButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\ButterPecan.jpg"));
 		butterPecanButton.setBounds(37, 384, 122, 76);
 		frame.getContentPane().add(butterPecanButton);
 		butterPecanButton.addActionListener(new ActionListener(){
@@ -215,7 +215,7 @@ public class Frame1 {
 		});
 		
 		JButton greenTeaButton = new JButton("");
-		greenTeaButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\GreenTea.jpg"));
+		greenTeaButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\GreenTea.jpg"));
 		greenTeaButton.setBounds(465, 385, 122, 76);
 		frame.getContentPane().add(greenTeaButton);
 		greenTeaButton.addActionListener(new ActionListener(){
@@ -227,7 +227,7 @@ public class Frame1 {
 		});
 		
 		JButton pistachioButton = new JButton("");
-		pistachioButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\Pistachio.jpg"));
+		pistachioButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\Pistachio.jpg"));
 		pistachioButton.setBounds(319, 469, 122, 76);
 		frame.getContentPane().add(pistachioButton);
 		pistachioButton.addActionListener(new ActionListener(){
@@ -239,7 +239,7 @@ public class Frame1 {
 		});
 		
 		JButton strawberryButton = new JButton("");
-		strawberryButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\StrawBerry.jpg"));
+		strawberryButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\StrawBerry.jpg"));
 		strawberryButton.setBounds(465, 469, 122, 76);
 		frame.getContentPane().add(strawberryButton);
 		strawberryButton.addActionListener(new ActionListener(){
@@ -251,7 +251,7 @@ public class Frame1 {
 		});
 		
 		JButton mangoButton = new JButton("");
-		mangoButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\Mango.jpg"));
+		mangoButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\Mango.jpg"));
 		mangoButton.setBounds(175, 467, 122, 76);
 		frame.getContentPane().add(mangoButton);
 		mangoButton.addActionListener(new ActionListener(){
@@ -263,7 +263,7 @@ public class Frame1 {
 		});
 		
 		JButton javaChipButton = new JButton("");
-		javaChipButton.setIcon(new ImageIcon("C:\\Users\\Maaz\\Desktop\\Images_IceCream\\JavaChip.jpg"));
+		javaChipButton.setIcon(new ImageIcon("C:\\Users\\T430\\Documents\\GitHub\\IceCream\\Images_IceCream\\JavaChip.jpg"));
 		javaChipButton.setBounds(37, 465, 122, 76);
 		frame.getContentPane().add(javaChipButton);
 		javaChipButton.addActionListener(new ActionListener(){
