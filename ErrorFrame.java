@@ -9,11 +9,14 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+import javax.swing.JLabel;
 
 public class ErrorFrame {
 
 	public JFrame frame;
-	private JTextField errorField;
+	private JLabel errorLabel;
+	private JLabel missingLabel;
 
 	/**
 	 * Launch the application.
@@ -47,26 +50,30 @@ public class ErrorFrame {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		errorField = new JTextField();
-		errorField.setFont(new Font("Tahoma", Font.BOLD, 13));
-		errorField.setBackground(new Color(255, 0, 0));
-		errorField.setText("ERROR!! You Left A Field Blank, \r\n");
-		errorField.setBounds(10, 11, 228, 23);
-		frame.getContentPane().add(errorField);
-		errorField.setColumns(10);
-		
-		JButton btnClickHereTo = new JButton("Click HERE To Go Back to Ice Cream Parlor");
+		JButton btnClickHereTo = new JButton("Close");
 		btnClickHereTo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Frame1 framey = new Frame1();
-				openWindow(framey);
+				frame.setVisible(false);
 			}
 		});
-		btnClickHereTo.setBounds(28, 67, 235, 23);
+		btnClickHereTo.setBounds(94, 82, 99, 23);
 		frame.getContentPane().add(btnClickHereTo);
+		
+		errorLabel = new JLabel("You left a field blank.");
+		errorLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
+		errorLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		errorLabel.setBounds(53, 11, 183, 36);
+		frame.getContentPane().add(errorLabel);
+		
+		missingLabel = new JLabel("(Fields left blank are highlighted in red)");
+		missingLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		missingLabel.setForeground(Color.RED);
+		missingLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		missingLabel.setBounds(10, 46, 268, 25);
+		frame.getContentPane().add(missingLabel);
 	}
 	
-	public void openWindow(Frame1 frameOpen){
+	public void openWindow(MenuFrame frameOpen){
 		frameOpen.frame.setVisible(true);
 		this.frame.setVisible(false);
 		
